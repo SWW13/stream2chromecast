@@ -39,7 +39,9 @@ Functionality
 -------------
 To stream supported media files to a Chromecast.
 
-        stream2chromecast.py my_media.mp4 or stream2chromecast.py my_music.mp3 or stream2chromecast.py my_photo.jpg
+        stream2chromecast.py my_media.mp4
+        stream2chromecast.py my_music.mp3
+        stream2chromecast.py my_photo.jpg
 
 
 To transcode and stream unsupported media files to a Chromecast.
