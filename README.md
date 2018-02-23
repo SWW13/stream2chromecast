@@ -3,7 +3,7 @@ Stream2Chromecast
 
 A Chromecast media streamer for Linux.
 
-Stream2Chromecast casts audio and video files to a Chromecast device from Linux.
+Stream2Chromecast casts audio, video and image files to a Chromecast device from Linux.
 
 It can also transcode any unsupported files in real time and play them on the Chromecast.
 
@@ -39,7 +39,7 @@ Functionality
 -------------
 To stream supported media files to a Chromecast.
 
-        stream2chromecast.py my_media.mp4
+        stream2chromecast.py my_media.mp4 or stream2chromecast.py my_music.mp3 or stream2chromecast.py my_photo.jpg
 
 
 To transcode and stream unsupported media files to a Chromecast.
