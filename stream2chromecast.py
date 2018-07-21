@@ -347,7 +347,7 @@ def get_mimetype(filename, ffprobe_cmd=None):
     # guess based on filename extension
     guess = mimetypes.guess_type(filename)[0]
     if guess is not None:
-        if guess.lower().startswith("video/") or guess.lower().startswith("audio/"):
+        if guess.lower().startswith("video/") or guess.lower().startswith("audio/") or guess.lower().startswith("image/"):
             mimetype = guess
       
         
@@ -356,7 +356,7 @@ def get_mimetype(filename, ffprobe_cmd=None):
         file_cmd = 'file --mime-type -b "%s"' % filename
         file_mimetype = subprocess.check_output(file_cmd, shell=True).strip().lower()
         
-        if file_mimetype.startswith("video/") or file_mimetype.startswith("audio/"):
+        if file_mimetype.startswith("video/") or file_mimetype.startswith("audio/") or file_mimetype.startswith("image/"):
             mimetype = file_mimetype
             
             print("OS identifies the mimetype as : " + mimetype)
